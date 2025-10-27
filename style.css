@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Orbitron', sans-serif;
+  background: url('assets/bg-donghua.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: white;
+  text-align: center;
+  overflow-x: hidden;
+}
+
+.hero {
+  height: 100vh;
+  backdrop-filter: brightness(0.6) blur(3px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  width: 120px;
+  margin-bottom: 20px;
+  filter: drop-shadow(0 0 15px #00eaff);
+}
+
+.glow {
+  font-size: 4rem;
+  color: #ff003c;
+  text-shadow: 0 0 25px #ff003c, 0 0 40px #00eaff;
+  animation: pulse 3s infinite alternate;
+}
+
+@keyframes pulse {
+  0% { text-shadow: 0 0 10px #ff003c; }
+  100% { text-shadow: 0 0 40px #00eaff, 0 0 60px #ff003c; }
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  margin-bottom: 25px;
+  color: #aaa;
+}
+
+.btn {
+  text-decoration: none;
+  background: linear-gradient(90deg, #ff003c, #00eaff);
+  padding: 14px 36px;
+  border-radius: 50px;
+  color: white;
+  font-weight: bold;
+  box-shadow: 0 0 15px #00eaff;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 25px #ff003c;
+}
+
+.about {
+  padding: 60px 20px;
+  background: rgba(0, 0, 0, 0.65);
+  border-top: 2px solid #ff003c;
+}
+
+.about h2 {
+  color: #00eaff;
+}
+
+footer {
+  padding: 25px;
+  font-size: 0.9rem;
+  background: rgba(0, 0, 0, 0.8);
+  border-top: 1px solid #ff003c;
+}
